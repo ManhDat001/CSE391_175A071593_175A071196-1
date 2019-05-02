@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Tạo form và các điều khiển trên form</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<h1 align="center"; style="color: #CC6600">Đăng nhập</h1>
+	<form method="Get" id="my_form"></form>
+	<table style="background-color: #CCEAF9"; cellspacing="0"; cellpadding="2"; border="1"; width="400px"; align="center">
+		<tr>
+			<td>Mã người dùng</td>
+			<td><input type="text"; id="username"></td>
+			
+
+		</tr>
+		<tr>
+			<td>Mật khẩu</td>
+			<td><input type="password" id="password"></td>
+			
+		</tr>
+		<tr>
+			<td colspan="2"; align="center"><input type="button"; id="button"; value="Đồng ý"; onclick="myFunction()"></td>
+			
+			
+		</tr>
+		<tr>
+			<td <td style="color: blue;" colspan="2" align="center" id="kq"></td>
+			
+			
+		</tr>
+		
+	</table>
+	
+</body>
+<script>
+function myFunction() {
+	document.getElementById("kq").innerHTML= document.getElementById("username").value;
+}
+</script>
+</html>
