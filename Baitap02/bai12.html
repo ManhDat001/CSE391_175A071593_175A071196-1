@@ -1,77 +1,64 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-	<title>Tạo form và các điều khiển</title>
-	<meta charset="utf-8"/>
-	<style>
-		table,tr,td{
-			border: 1px solid grey;
-			border-collapse: collapse;
-			background: #CCF5CC;
-			color: green;
-			width: 30%;
-		}
-		
-	</style>
-</head>
-<body>
-<div>
-	<h2 style="color: green;" align="center">Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
-	<form style="display: flex;justify-content: center;">
-		<table>
-			<tr>
-				<td>Họ và tên</td>
-				<td><input type="text" name=""></td>
-			</tr>
-			<tr>
-				<td>Địa chỉ</td>
-				<td><input type="text" name=""></td>
-			</tr>
-			<tr>
-				<td>Điện thoại</td>
-				<td><input type="text" name=""></td>
-			</tr>
-			<tr>
-				<td>Phái</td>
-				<td><input type="radio" name="phai">Nam
-				<input type="radio" name="phai">Nữ
-				</td>
-			</tr>
-			<tr>
-				<td>Nghề nghiệp</td>
-				<td><select>
-					<option selected="">Bác Sĩ</option>
-					<option value="">Kỹ sư</option>
-					<option value="">Giáo viên</option>
-					<option value="">Khác</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td>Chọn sản phẩm tham gia</td>
-				<td><select name="mul" multiple size="4">
-					<option >Kem đánh răng</option>
-					<option >Bột giặt</option>
-					<option >Dầu gội đầu</option>
-					<option >Sữa tắm</option>
-				</select></td>
-			</tr>
-			<tr>
-				<td>Số người dự đoán tham gia</td>
-				<td><input type="text" name=""></td>
-			</tr>
-			<tr>
-				<td   colspan="2" ><input style="position: relative;left: 40%;" type="button" name="" value="Đồng ý" onclick="myFunction()"></td>
-			</tr>
-			<tr >
-				<td style="color: #ed64bd;" colspan="2" align="center" id="kq"></td>
-			</tr>
-		</table>
-	</form>
-</div>
-<script>
-function myFunction() {
-	document.getElementById("kq").innerHTML= "Bạn đã đăng ký thành công!!!"
-}
-</script>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tạo form và cách điều khiển</title>
+  </head>
+  <body>
+    <table width="400" border="2" cellpadding="5" align="center">
+      <tr>
+        <th colspan="2">Phiếu đăng ký tham gia chương trình khuyến mãi</th>
+      </tr>
+      <tr>
+        <td>Họ tên</td>
+        <td><input type="text" name="Họ và tên" size="30" placeholder="Nhập họ tên"></td>
+      </tr>
+      <tr>
+        <td>Địa chỉ</td>
+        <td><input type="text" name="Địa chỉ" size="30" placeholder="Nhập địa chỉ"></td>
+      </tr>
+      <tr>
+        <td>Điện thoại</td>
+        <td><input type="number" name="Điện thoại" size="30" placeholder="Nhập số điện thoại"></td>
+      </tr>
+      <tr>
+        <td>Giới tính</td>
+        <td><input type="radio" name="gioitinh" id="nam">nam
+            <input type="radio" name="gioitinh" id="nữ">nữ
+        </td>
+      </tr>
+      <tr>
+        <td>Nghề nghiệp</td>
+        <td>
+          <select name="nghề nghiệp">
+            <option value="Bác sĩ">Bác sĩ</option>
+            <option value="Kỹ sư">Kỹ sư</option>
+            <option value="Giáo viên">Giáo viên</option>
+            <option value="Khác">Khác</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Chọn sản phẩm tham ra</td>
+        <td>
+          <input type="checkbox" name="Kem đánh răng" value="Kem đánh răng"> Kem đánh răng
+          <input type="checkbox" name="Bột giặt" value="Bột giặt ">Bột giặt
+          <input type="checkbox" name="Dầu gội đầu" value="Dầu gội đầu">Dầu gội đầu
+          <input type="checkbox" name="Sữa tắm" value="Sữa tắm">Sữa tắm
+        </td>
+      </tr>
+      <tr>
+        <td>Số người dự đoán tham ra</td>
+        <td><input type="number" name="Số người dự đoán tham ra" placeholder="Nhập số người dự đoán tham ra"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" name="ok" value="Đồng ý"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+  </body>
 </html>
